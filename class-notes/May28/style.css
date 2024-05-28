@@ -1,0 +1,28 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3 {
+  color: blue;
+}
+
+.para {
+  border: 1px solid red;
+}
+
+#para1 {
+  color: blueviolet;
+}
+
+#para1,
+#para2 {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+#para1:hover {
+  font-weight: bold;
+}
+
+#para2::first-line {
+  color: yellow;
+}
