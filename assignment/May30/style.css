@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333333;
+}
+
+h1 {
+  text-align: center;
+  padding: 1em;
+  background-color: aqua;
+}
+
+input {
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  border: 1px solid #666666;
+  border-radius: 5em;
+}
+
+#submit:hover {
+  background-color: #333333;
+  color: aliceblue;
+}

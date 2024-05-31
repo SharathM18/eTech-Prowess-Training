@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Enquiry Form</title>
+  </head>
+  <body>
+    <h1>Student Enquiry Form</h1>
+    <form>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" required />
+      <br />
+      <label for="mobile-number">Mobile Number: </label>
+      <input type="number" name="mobile-number" id="mobile-number" />
+      <br />
+      <label for="email-id">E-mail ID: </label>
+      <input type="email" name="email-id" id="email-id" required />
+      <br />
+      <label for="branch">Branch: </label>
+      <input type="text" name="branch" id="branch" required />
+      <br />
+      <label for="cgpa">CGPA: </label>
+      <input type="number" name="cgpa" id="cgpa" min="7" max="10" required />
+      <br />
+      <label for="number">10th Percentage: </label>
+      <input type="number" min="60" max="100" required />
+      <br />
+      <label for="number">12th Percentage: </label>
+      <input type="number" min="60" max="100" required />
+      <br />
+      <label for="10th_board">10th Board: </label>
+      <input type="text" name="10th_board" id="10th_board" />
+      <br />
+      <label for="10th_board">12th Board: </label>
+      <input type="text" name="10th_board" id="10th_board" />
+      <br />
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
