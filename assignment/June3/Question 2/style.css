@@ -1,0 +1,54 @@
+nav {
+  background-color: aqua;
+  width: 90%;
+  padding: 10px 0;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+table {
+  width: 90%;
+}
+
+.last {
+  text-align: end;
+}
+
+.table-head {
+  background-color: aqua;
+}
+
+.columns {
+  width: 20px;
+}
+
+section {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  padding: 2em 0;
+  gap: 5em;
+}
+
+.para {
+  width: 45%;
+}
+
+.timings {
+  width: 40%;
+  border: 2px solid purple;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+footer {
+  width: 90%;
+  text-align: center;
+  background-color: aqua;
+  color: black;
+}
