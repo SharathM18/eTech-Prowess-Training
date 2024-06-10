@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1px;
+  font-size: 4rem;
+  color: black;
+}
+
+.boxes {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+h1,
+.msg {
+  text-align: center;
+}
+
+.btns,
+.choose-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.move-tracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reset,
+.newgame,
+.x-turn,
+.o-turn {
+  padding: 0.5em 1em;
+  border: 1px solid #666666;
+  border-radius: 10px;
+}
