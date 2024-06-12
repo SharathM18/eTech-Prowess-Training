@@ -26,16 +26,16 @@ print(largest_no)
 
 # find all the prime no. b/w 1 and 50 using nested for and if
 
-def primeNumber(num):
-    if (num <= 1):
-        print(f"{num} is not a prime number")
-    else:
-        for i in range(2, num):
-            if(num % i) == 0:
-                print(f"{num} is not a prime number")
-                break
+def primeNumber(start, end):
+    for i in range(start, end + 1):
+        if (i <= 1):
+           pass
         else:
-            print(f"{num} is a prime number")
+            for j in range(2, i):
+                if(i % j) == 0:
+                    break
+            else:
+                print(i)
 
-ip_num = int(input("Enter the number: "))
-primeNumber(ip_num)
+
+primeNumber(start=1, end=50)
