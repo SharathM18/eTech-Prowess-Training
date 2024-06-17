@@ -1,17 +1,17 @@
 // async operation
 
-// setTimeout(() => {
-//   console.log("hi bro....");
-// }, 1000);
-// setTimeout(() => {
-//   console.log("hi bro....");
-// }, 2000);
-// setTimeout(() => {
-//   console.log("hi bro....");
-// }, 3000);
-// setTimeout(() => {
-//   console.log("hi bro....");
-// }, 4000);
+setTimeout(() => {
+  console.log("hi bro....");
+}, 1000);
+setTimeout(() => {
+  console.log("hi bro....");
+}, 2000);
+setTimeout(() => {
+  console.log("hi bro....");
+}, 3000);
+setTimeout(() => {
+  console.log("hi bro....");
+}, 4000);
 
 // callback
 
