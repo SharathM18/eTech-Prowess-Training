@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1244px;
+  margin: auto;
+}
+
+/* navigation bar  */
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 28px;
+  z-index: 99999;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search,
+.auth,
+.cart,
+.seller {
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-field::placeholder {
+  color: #666;
+}
+
+.auth-img,
+.cart-icon,
+.seller-icon {
+  margin: 0px 8px 0px 0px;
+}
+
+.menu-bar {
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.search-field {
+  border: 0;
+  outline: 0 none;
+  font-size: 17px;
+  height: 40px;
+  width: 417.6px;
+  background-color: rgba(240, 245, 255, 255);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.search-icon {
+  width: 44px;
+  height: 40px;
+  padding: 8px 8px 8px 12px;
+  background-color: rgba(240, 245, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.drop-icon {
+  padding: 0px 0px 0px 8px;
+}
+
+.auth {
+  padding: 8px;
+}
+
+.auth-container {
+  height: 40px;
+  padding: 0px 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container:hover {
+  background-color: #2a55e5;
+  color: white;
+}
+
+/* circle-shopping */
+
+.circle-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-content-image {
+  width: 90px;
+  height: 60px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle-content-box-name {
+  width: 90px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.circle-content-box-container {
+  width: 122px;
+  height: 141.3px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.circle-shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 14px;
+}
+
+.section-container {
+  background-color: #f1f2f4;
+  padding: 8px 16px;
+}
+
+/* deals section */
+
+.left {
+  width: 1007.3px;
+  font-size: 14px;
+}
+
+.header-container {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  background-color: #2a55e5;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow-btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.title-content {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.phone-details {
+  width: 250px;
+  height: 250px;
+  padding: 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-info {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  gap: 15px;
+  padding: 0 10px 10px 10px;
+  overflow-x: hidden;
+}
+
+.dragging {
+  cursor: grab;
+  user-select: none;
+}
+
+.right {
+  width: 188px;
+  height: 324px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deals-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* offer poster */
+
+/* Footer */
+.footer-container {
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  background-color: #212121;
+}
+
+.top {
+  padding: 60px 40px 0px 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-about,
+.footer-group-company,
+.help {
+  width: 120.4px;
+  height: 190px;
+}
+
+.footer-social-contact,
+.address {
+  width: 254.7px;
+  height: 190px;
+}
+
+.footer-main {
+  margin-bottom: 12px;
+  color: #878787;
+}
+
+.footer-para {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-about,
+.footer-group-company,
+.help,
+.consumer,
+.mail-us,
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.consumer {
+  width: 140px;
+  border-right: 0.1px solid #878787;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0px;
+  margin-top: 40px;
+  border: 0.5px solid #878787;
+}
+
+.cprs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}

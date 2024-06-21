@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+    <title>Flipkart by Sharath M</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Naviagtion Bar -->
+      <header>
+        <nav>
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+            width="160"
+            height="40"
+            title="Flipkart"
+            style="cursor: pointer"
+          />
+          <div class="search">
+            <div class="search-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <title>Search Icon</title>
+                <path
+                  d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                  stroke="#717478"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M16 16L21 21"
+                  stroke="#717478"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              title="Search for Products, Brands and More"
+              placeholder="Search for Products, Brands and More"
+              value=""
+              class="search-field"
+            />
+          </div>
+          <div class="auth-container">
+            <div class="auth">
+              <img
+                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
+                alt="Login"
+                class="auth-img"
+                width="24"
+                height="24"
+              />
+              <span>Login</span>
+              <div class="drop-icon">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K"
+                  alt="Chevron"
+                  width="12"
+                  height="12"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="cart">
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+              alt="Cart"
+              class="cart-icon"
+              width="24"
+              height="24"
+            />
+            <p>Cart</p>
+          </div>
+          <div class="seller">
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+              alt="Become a Seller"
+              class="seller-icon"
+            />
+            <p>Become a Seller</p>
+          </div>
+          <div class="menu-bar">
+            <img
+              class="menu-dots"
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+              width="24"
+              height="24"
+              alt="Dropdown with more help links"
+            />
+          </div>
+        </nav>
+      </header>
+
+      <section class="section-container">
+        <!-- Circle Shopping Section -->
+        <div class="circle-shopping">
+          <!-- 1 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  alt="Top Offer"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/698ba0cebe456aaf.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Top Offer</span>
+            </div>
+          </div>
+
+          <!-- 2 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="Mobiles &amp; Tablets"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/44e10b16e649b691.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Mobiles & Tablets</span>
+            </div>
+          </div>
+
+          <!-- 3 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="TVs &amp; Appliances"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/717b5077a5e25324.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">TVs & Appliances</span>
+            </div>
+          </div>
+
+          <!-- 4 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="Electronics"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/4da1d0d19350cc84.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Electronics</span>
+            </div>
+          </div>
+
+          <!-- 5 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="Fashion"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/9d4e9c605fc1d2d3.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Fashion</span>
+            </div>
+          </div>
+
+          <!-- 6 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="Beauty"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/a5e656672d0548dd.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Beauty</span>
+            </div>
+          </div>
+
+          <!-- 7 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="Home &amp; Kitchen"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/5b813b64a3179898.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Home & Kitchen</span>
+            </div>
+          </div>
+
+          <!-- 8 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="Furniture"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/7a5e96c10ada8a56.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Furniture</span>
+            </div>
+          </div>
+
+          <!-- 9 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="Travel"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/57fe1ffe54569c41.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Travel</span>
+            </div>
+          </div>
+
+          <!-- 10 item -->
+          <div class="circle-content-box-container">
+            <div class="circle-content-box">
+              <div class="circle-content-image">
+                <img
+                  class="_2puWtW _3a3qyb"
+                  alt="Grocery"
+                  src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/25f400c36bc3487d.jpg?q=100"
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <span class="circle-content-box-name">Grocery</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- offer-full-section  -->
+      <section class="section-container">
+        <div>
+          <img
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/1e31c9d65e3b4592.jpg?q=20"
+            loading="eager"
+            alt="Image"
+            style="width: 1212px; margin: auto; height: 201px"
+          />
+        </div>
+      </section>
+
+      <section class="section-container">
+        <div class="deals-container">
+          <!-- deals section -->
+          <div class="left">
+            <div class="header-container">
+              <div class="title-content">Deals On Smartphones</div>
+              <div class="arrow">
+                <p class="arrow-btn">></p>
+              </div>
+            </div>
+            <div class="phone-container">
+              <!-- Phone 1 -->
+              <div class="phone-details">
+                <div class="phone-info">
+                  <div class="phone-image">
+                    <img
+                      src="./assests/phoneimage1.png"
+                      alt="phone-image"
+                      width="150px"
+                      height="180px"
+                      draggable="false"
+                    />
+                  </div>
+                  <span>iPhone 15</span>
+                  <span style="font-weight: 600">Just ₹67,999</span>
+                </div>
+              </div>
+              <!-- Phone 2 -->
+              <div class="phone-details">
+                <div class="phone-info">
+                  <div class="phone-image">
+                    <img
+                      src="./assests/phone2.png"
+                      alt="phone-image"
+                      width="150px"
+                      height="180px"
+                      draggable="false"
+                    />
+                  </div>
+                  <span>motorola edge 50 Pro</span>
+                  <span style="font-weight: 600">From ₹27,999*</span>
+                </div>
+              </div>
+              <!-- Phone 3 -->
+              <div class="phone-details">
+                <div class="phone-info">
+                  <div class="phone-image">
+                    <img
+                      src="./assests/phone3.png"
+                      alt="phone-image"
+                      width="150px"
+                      height="180px"
+                      draggable="false"
+                    />
+                  </div>
+                  <span>moto G34 5G</span>
+                  <span style="font-weight: 600">Just ₹9,999*</span>
+                </div>
+              </div>
+              <!-- Phone 4 -->
+              <div class="phone-details">
+                <div class="phone-info">
+                  <div class="phone-image">
+                    <img
+                      src="./assests/phone4.png"
+                      alt="phone-image"
+                      width="150px"
+                      height="180px"
+                      draggable="false"
+                    />
+                  </div>
+                  <span>Samsung S23 FE</span>
+                  <span style="font-weight: 600">From ₹33,999*</span>
+                </div>
+              </div>
+              <!-- Phone 5 -->
+              <div class="phone-details">
+                <div class="phone-info">
+                  <div class="phone-image">
+                    <img
+                      src="./assests/phone5.png"
+                      alt="phone-image"
+                      width="150px"
+                      height="180px"
+                      draggable="false"
+                    />
+                  </div>
+                  <span>realme P1 5G( 6|128GB)</span>
+                  <span style="font-weight: 600">Just ₹15,999*</span>
+                </div>
+              </div>
+              <!-- Phone 6 -->
+              <div class="phone-details">
+                <div class="phone-info">
+                  <div class="phone-image">
+                    <img
+                      src="./assests/phone6.png"
+                      alt="phone-image"
+                      width="150px"
+                      height="180px"
+                      draggable="false"
+                    />
+                  </div>
+                  <span>moto g64 5G</span>
+                  <span style="font-weight: 600">Just ₹12,999</span>
+                </div>
+              </div>
+              <!-- Phone 7 -->
+              <div class="phone-details">
+                <div class="phone-info">
+                  <div class="phone-image">
+                    <img
+                      src="./assests/phone7.png"
+                      alt="phone-image"
+                      width="150px"
+                      height="180px"
+                      draggable="false"
+                    />
+                  </div>
+                  <span>vivo T3X 5G</span>
+                  <span style="font-weight: 600">From ₹12,499*</span>
+                </div>
+              </div>
+              <!-- Phone 8 -->
+              <div class="phone-details">
+                <div class="phone-info">
+                  <div class="phone-image">
+                    <img
+                      src="./assests/phone8.png"
+                      alt="phone-image"
+                      width="150px"
+                      height="180px"
+                      draggable="false"
+                    />
+                  </div>
+                  <span>realme 12x 5G(6|128GB)</span>
+                  <span style="font-weight: 600">Just ₹11,999</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Offer section -->
+          <div class="right section-container">
+            <img src="./assests/offer.png" alt="offer" width="178" />
+          </div>
+        </div>
+      </section>
+
+      <!-- offer poster -->
+      <div class="section-container">
+        <img src="./assests/offerposter.png" alt="offerposter" width="1213" />
+      </div>
+
+      <!-- Footer -->
+      <div class="footer-container">
+        <div class="top">
+          <div class="footer-about">
+            <p class="footer-main" class="footer-para">ABOUT</p>
+            <a href="#" class="footer-para">Contact Us</a>
+            <a href="#" class="footer-para">About Us</a>
+            <a href="#" class="footer-para">Careers</a>
+            <a href="#" class="footer-para">Flipkart Stories</a>
+            <a href="#" class="footer-para">Press</a>
+            <a href="#" class="footer-para">Corparate</a>
+            <a href="#" class="footer-para">Information</a>
+          </div>
+          <div class="footer-group-company">
+            <p class="footer-main">GRUOP COMPANIES</p>
+            <a href="#" class="footer-para">Myntra</a>
+            <a href="#" class="footer-para">Cleartrip</a>
+            <a href="#" class="footer-para">Shopsy</a>
+          </div>
+          <div class="help">
+            <p class="footer-main">HELP</p>
+            <a href="#" class="footer-para">Payments</a>
+            <a href="#" class="footer-para">Shipping</a>
+            <a href="#" class="footer-para">Cancellation</a>
+            <a href="#" class="footer-para">Returns</a>
+            <a href="#" class="footer-para">FAQs</a>
+            <a href="#" class="footer-para">Report Infrigement</a>
+          </div>
+          <div class="consumer">
+            <p class="footer-main">CONSUMER POLICY:</p>
+            <a href="#" class="footer-para">Cancellation & Returns</a>
+            <a href="#" class="footer-para">Terms of Use</a>
+            <a href="#" class="footer-para">Security</a>
+            <a href="#" class="footer-para">Privacy</a>
+            <a href="#" class="footer-para">Sitemap</a>
+            <a href="#" class="footer-para">Grievance Redressal</a>
+            <a href="#" class="footer-para">EPR Compliance</a>
+          </div>
+          <div class="footer-social-contact">
+            <div class="mail-us">
+              <p class="footer-main">Mail Us:</p>
+              <p class="footer-para">Flipkart Internet Private Limited,</p>
+              <p class="footer-para">Buildings Alyssa, Begonia &</p>
+              <p class="footer-para">Clove Embassy Tech Village,</p>
+              <p class="footer-para">
+                Outer Ring Road, Devarabeesanahalli Village,
+              </p>
+              <p class="footer-para">Bengaluru, 560103,</p>
+              <p class="footer-para">Karnataka, India</p>
+            </div>
+            <div class="social">
+              <p class="footer-main">Social</p>
+              <div class="social-links">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjkzMzEgMjFDMTcuOTAzNyAyMSAyMS45MzMxIDE2Ljk3MDYgMjEuOTMzMSAxMkMyMS45MzMxIDcuMDI5NDQgMTcuOTAzNyAzIDEyLjkzMzEgM0M3Ljk2MjU0IDMgMy45MzMxMSA3LjAyOTQ0IDMuOTMzMTEgMTJDMy45MzMxMSAxNi45NzA2IDcuOTYyNTQgMjEgMTIuOTMzMSAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE2LjY4MzEgOC4yNUgxNS4xODMxQzE0LjU4NjQgOC4yNSAxNC4wMTQxIDguNDg3MDUgMTMuNTkyMSA4LjkwOTAxQzEzLjE3MDIgOS4zMzA5NyAxMi45MzMxIDkuOTAzMjYgMTIuOTMzMSAxMC41VjIxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik05LjkzMzExIDEzLjVIMTUuOTMzMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K"
+                  alt="Facebook"
+                  width="24"
+                  height="24"
+                />
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE4M18yMCkiPgo8cGF0aCBkPSJNMTMuNTQzNiAxMC42MTc5TDIwLjA5NzEgM0gxOC41NDQxTDEyLjg1MzcgOS42MTQ0OEw4LjMwODg3IDNIMy4wNjY4OUw5LjkzOTY0IDEzLjAwMjNMMy4wNjY4OSAyMC45OTA4SDQuNjE5OTRMMTAuNjI5MSAxNC4wMDU2TDE1LjQyODggMjAuOTkwOEgyMC42NzA4TDEzLjU0MzIgMTAuNjE3OUgxMy41NDM2Wk0xMS40MTY1IDEzLjA5MDRMMTAuNzIwMiAxMi4wOTQ0TDUuMTc5NTMgNC4xNjkxMUg3LjU2NDkxTDEyLjAzNjMgMTAuNTY1MUwxMi43MzI2IDExLjU2MTFMMTguNTQ0OCAxOS44NzQ4SDE2LjE1OTVMMTEuNDE2NSAxMy4wOTA4VjEzLjA5MDRaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE4M18yMCI+CjxyZWN0IHg9IjMuMDY2ODkiIHk9IjMiIHdpZHRoPSIxNy42MDM5IiBoZWlnaHQ9IjE4IiByeD0iMC4yIiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo="
+                  alt="Twitter"
+                  width="24"
+                  height="24"
+                />
+                <img
+                  src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/YoutubeLogo-8425c4.svg"
+                  alt="YouTube"
+                  width="24"
+                  height="24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="address">
+            <p class="footer-main">Registered Office Address:</p>
+            <p class="footer-para">Flipkart Internet Private Limited,</p>
+            <p class="footer-para">Buildings Alyssa, Begonia &</p>
+            <p class="footer-para">Clove Embassy Tech Village,</p>
+            <p class="footer-para">
+              Outer Ring Road, Devarabeesanahalli Village,
+            </p>
+            <p class="footer-para">Bengaluru, 560103,</p>
+            <p class="footer-para">Karnataka, India</p>
+            <p class="footer-para">CIN : U51109KA2012PTC066107</p>
+            <p class="footer-para">
+              Telephone: <a href="tel:044-45614700">044-45614700</a> /
+              <a href="tel:044-67415800">044-67415800</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="cprs">
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+              alt="Become a Seller"
+              width="13"
+              height="12"
+            />
+            <p>Become a seller</p>
+          </div>
+          <div class="cprs">
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+              alt="Advertise"
+              width="14"
+              height="14"
+            />
+            <p>Advertise</p>
+          </div>
+          <div class="cprs">
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+              alt="Gift Cards"
+              width="13"
+              height="13"
+            />
+            <p>Gift Card</p>
+          </div>
+          <div class="cprs">
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+              alt="Help Center"
+              width="13"
+              height="13"
+            />
+            <p>Help Center</p>
+          </div>
+          <div style="font-weight: 600">
+            <span class="pCGSTE">© 2007-2024 <span>Flipkart.com</span></span>
+          </div>
+          <div>
+            <img
+              src="./assests/paymentMethod.png"
+              alt="paymentMethod"
+              width="366"
+              height="25"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
